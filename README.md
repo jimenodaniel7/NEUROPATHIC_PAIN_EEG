@@ -13,3 +13,11 @@ The first one, bandpass_asr.m, loads the data from the files provided by the EEG
 The second file calculates the PSD from every channel in the data and extracts the power of each of the five frequency bands of activity recorded in the brain (alpha, beta, gamma, delta, theta).
 The third file, trials.m, calculates the PSD from the trials in the motor imaginary task. Each trial was marked by the arrow that showed in the program.
 The last file, calc_psd.m, extracts the power of the frequency bands of the PSD of the motor task. First, it calculates the mean of all the PSD of the trials of each hand, and then it extracts the power from that signals.
+
+## New additions 3-10-2024
+
+With the processed EEG files, the new script "test_ERPanalysis_ERDERS_spectrogram.m" does the following steps:
+1. Compute ERP of the trials of each experiment
+2. Compute ERD-ERS ratio of the ERP and show the spectrogram
+
+The MATLAB function "erp_bin.m" computes the ERP of the experiments.

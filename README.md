@@ -20,4 +20,10 @@ With the processed EEG files, the new script "test_ERPanalysis_ERDERS_spectrogra
 1. Compute ERP of the trials of each experiment
 2. Compute ERD-ERS ratio of the ERP and show the spectrogram
 
+The ERD-ERS ratio is computed with the following formula:
+
+$$
+ERDERS (%) = 100 \times \frac{smoothed\_ERP - \mu_{baseline}}{\mu_{baseline}}
+$$
+
 The MATLAB function "erp_bin.m" computes the ERP of the experiments.

@@ -28,7 +28,7 @@ After obtaining the ERP, the signal is smoothed using a moving average window.
 With the smoothed signal, the ERD/ERS of the signal is calculated. First, the part before the trial (baseline) and the part after the stimulus (post-stimulus) are separated. Then, the following formula is applied:
 
 $$
-ERDERS = 100 \times \frac{smoothed\_{ERP} - \mu_{baseline}}{\mu_{baseline}}
+ERDERS = 100 \times \frac{ERP\_{smoothed} - \mu_{baseline}}{\mu_{baseline}}
 $$
 
 The MATLAB function "erp_bin.m" computes the ERP of the experiments.
